@@ -8,6 +8,9 @@
 
 import Foundation
 import Alamofire
+import AlamofireObjectMapper
+import ObjectMapper
+import Foundation
 
 /**
  Convinience way to contruct the URLRequest
@@ -67,7 +70,8 @@ class MeetupAPI {
     /**
      Performs the GET request for Open Events from API
      */
-    class func openEvents(lat: Double, lon: Double, categoryId: Int, complention: ([AnyObject]?, ErrorType?) -> Void) {
+    class func openEvents(lat: Double, lon: Double, categoryId: Int, complention: ([Event]?, ErrorType?) -> Void) {
         Alamofire.request(Router.OpenEvents(lat, lon, categoryId))
+            .responseArray("results", completionHandler: complention)
     }
 }
