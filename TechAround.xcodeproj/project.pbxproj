@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89E13F15815891D1AC0417D0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B91CB5FD527569018550DF /* Pods.framework */; };
 		C7266B991BED076A005C584F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266B981BED076A005C584F /* AppDelegate.swift */; };
-		C7266B9B1BED076A005C584F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266B9A1BED076A005C584F /* ViewController.swift */; };
 		C7266B9E1BED076A005C584F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7266B9C1BED076A005C584F /* Main.storyboard */; };
 		C7266BA01BED076A005C584F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7266B9F1BED076A005C584F /* Assets.xcassets */; };
 		C7266BA31BED076A005C584F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7266BA11BED076A005C584F /* LaunchScreen.storyboard */; };
 		C7266BAE1BED076A005C584F /* TechAroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BAD1BED076A005C584F /* TechAroundTests.swift */; };
 		C7266BB91BED076A005C584F /* TechAroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BB81BED076A005C584F /* TechAroundUITests.swift */; };
+		C7266BC91BED0B36005C584F /* MeetupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BC81BED0B36005C584F /* MeetupsViewController.swift */; };
+		C7266BCB1BED0BA6005C584F /* MeetupAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BCA1BED0BA6005C584F /* MeetupAPI.swift */; };
+		C7266BCD1BED0E6C005C584F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BCC1BED0E6C005C584F /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0088006333A95961D764BA32 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C210C9A9EBD749DB1D99FA23 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C7266B951BED076A005C584F /* TechAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7266B981BED076A005C584F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7266B9A1BED076A005C584F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7266B9D1BED076A005C584F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7266B9F1BED076A005C584F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7266BA21BED076A005C584F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		C7266BB41BED076A005C584F /* TechAroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechAroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7266BB81BED076A005C584F /* TechAroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechAroundUITests.swift; sourceTree = "<group>"; };
 		C7266BBA1BED076A005C584F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7266BC81BED0B36005C584F /* MeetupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupsViewController.swift; sourceTree = "<group>"; };
+		C7266BCA1BED0BA6005C584F /* MeetupAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupAPI.swift; sourceTree = "<group>"; };
+		C7266BCC1BED0E6C005C584F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D0B91CB5FD527569018550DF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E13F15815891D1AC0417D0 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CF69A2F756B588DD4961D72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C210C9A9EBD749DB1D99FA23 /* Pods.debug.xcconfig */,
+				0088006333A95961D764BA32 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C7266B8C1BED076A005C584F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +99,8 @@
 				C7266BAC1BED076A005C584F /* TechAroundTests */,
 				C7266BB71BED076A005C584F /* TechAroundUITests */,
 				C7266B961BED076A005C584F /* Products */,
+				6CF69A2F756B588DD4961D72 /* Pods */,
+				F9C01315CC2314B643383036 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				C7266B981BED076A005C584F /* AppDelegate.swift */,
-				C7266B9A1BED076A005C584F /* ViewController.swift */,
+				C7266BC81BED0B36005C584F /* MeetupsViewController.swift */,
+				C7266BCA1BED0BA6005C584F /* MeetupAPI.swift */,
+				C7266BCC1BED0E6C005C584F /* Utils.swift */,
 				C7266B9C1BED076A005C584F /* Main.storyboard */,
 				C7266B9F1BED076A005C584F /* Assets.xcassets */,
 				C7266BA11BED076A005C584F /* LaunchScreen.storyboard */,
@@ -125,6 +147,14 @@
 			path = TechAroundUITests;
 			sourceTree = "<group>";
 		};
+		F9C01315CC2314B643383036 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0B91CB5FD527569018550DF /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7266BBD1BED076A005C584F /* Build configuration list for PBXNativeTarget "TechAround" */;
 			buildPhases = (
+				232EC670C4ECDCF832E455DA /* Check Pods Manifest.lock */,
 				C7266B911BED076A005C584F /* Sources */,
 				C7266B921BED076A005C584F /* Frameworks */,
 				C7266B931BED076A005C584F /* Resources */,
+				5BD63C4D1E883B8CAF52DC90 /* Embed Pods Frameworks */,
+				2B6AA13D8B5FBB836F4D44EF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +284,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		232EC670C4ECDCF832E455DA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2B6AA13D8B5FBB836F4D44EF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD63C4D1E883B8CAF52DC90 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7266B911BED076A005C584F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7266B9B1BED076A005C584F /* ViewController.swift in Sources */,
+				C7266BC91BED0B36005C584F /* MeetupsViewController.swift in Sources */,
+				C7266BCB1BED0BA6005C584F /* MeetupAPI.swift in Sources */,
 				C7266B991BED076A005C584F /* AppDelegate.swift in Sources */,
+				C7266BCD1BED0E6C005C584F /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +480,7 @@
 		};
 		C7266BBE1BED076A005C584F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C210C9A9EBD749DB1D99FA23 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TechAround/Info.plist;
@@ -408,6 +492,7 @@
 		};
 		C7266BBF1BED076A005C584F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0088006333A95961D764BA32 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TechAround/Info.plist;
@@ -484,6 +569,7 @@
 				C7266BBF1BED076A005C584F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7266BC01BED076A005C584F /* Build configuration list for PBXNativeTarget "TechAroundTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +578,7 @@
 				C7266BC21BED076A005C584F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7266BC31BED076A005C584F /* Build configuration list for PBXNativeTarget "TechAroundUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +587,7 @@
 				C7266BC51BED076A005C584F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
