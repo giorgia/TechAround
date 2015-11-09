@@ -19,7 +19,7 @@ class Event: Mappable  {
     var utcOffset:      Int?
     var desc:           String?
     var eventUrl:       String?
-    var time:           Int?
+    var time:           Double?
     var status:         String?
     var yesRsvpCount:   Int?
     var venue:          Venue?

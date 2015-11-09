@@ -19,3 +19,13 @@ func + <K, V> (left: [K : V], right: [K : V]) -> [K : V] {
     }
     return sum
 }
+
+public extension NSDate {
+    class func fromMilliseconds(milliseconds: Double) -> NSDate {
+        return NSDate(timeIntervalSince1970: milliseconds / 1000.0)
+    }
+    
+    func toMilliseconds() -> Double {
+        return self.timeIntervalSince1970 * 1000.0
+    }
+}

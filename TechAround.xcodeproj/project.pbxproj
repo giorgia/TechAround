@@ -19,6 +19,7 @@
 		C7266BCD1BED0E6C005C584F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BCC1BED0E6C005C584F /* Utils.swift */; };
 		C7266BCF1BED111C005C584F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BCE1BED111C005C584F /* Model.swift */; };
 		C7266BD11BF123B7005C584F /* AuthWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BD01BF123B7005C584F /* AuthWebViewController.swift */; };
+		C7266BD31BF13C76005C584F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7266BD21BF13C76005C584F /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C7266BCC1BED0E6C005C584F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C7266BCE1BED111C005C584F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C7266BD01BF123B7005C584F /* AuthWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthWebViewController.swift; sourceTree = "<group>"; };
+		C7266BD21BF13C76005C584F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D0B91CB5FD527569018550DF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7266BD31BF13C76005C584F /* CoreLocation.framework in Frameworks */,
 				89E13F15815891D1AC0417D0 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +159,7 @@
 		F9C01315CC2314B643383036 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7266BD21BF13C76005C584F /* CoreLocation.framework */,
 				D0B91CB5FD527569018550DF /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -232,6 +236,11 @@
 				TargetAttributes = {
 					C7266B941BED076A005C584F = {
 						CreatedOnToolsVersion = 7.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					C7266BA81BED076A005C584F = {
 						CreatedOnToolsVersion = 7.1;
