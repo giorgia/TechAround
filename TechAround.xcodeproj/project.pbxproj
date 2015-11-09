@@ -18,6 +18,7 @@
 		C7266BCB1BED0BA6005C584F /* MeetupAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BCA1BED0BA6005C584F /* MeetupAPI.swift */; };
 		C7266BCD1BED0E6C005C584F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BCC1BED0E6C005C584F /* Utils.swift */; };
 		C7266BCF1BED111C005C584F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BCE1BED111C005C584F /* Model.swift */; };
+		C7266BD11BF123B7005C584F /* AuthWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7266BD01BF123B7005C584F /* AuthWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		C7266BCA1BED0BA6005C584F /* MeetupAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetupAPI.swift; sourceTree = "<group>"; };
 		C7266BCC1BED0E6C005C584F /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C7266BCE1BED111C005C584F /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C7266BD01BF123B7005C584F /* AuthWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthWebViewController.swift; sourceTree = "<group>"; };
 		D0B91CB5FD527569018550DF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 			children = (
 				C7266B981BED076A005C584F /* AppDelegate.swift */,
 				C7266BC81BED0B36005C584F /* MeetupsViewController.swift */,
+				C7266BD01BF123B7005C584F /* AuthWebViewController.swift */,
 				C7266BCA1BED0BA6005C584F /* MeetupAPI.swift */,
 				C7266BCE1BED111C005C584F /* Model.swift */,
 				C7266BCC1BED0E6C005C584F /* Utils.swift */,
@@ -343,6 +346,7 @@
 				C7266BCF1BED111C005C584F /* Model.swift in Sources */,
 				C7266BC91BED0B36005C584F /* MeetupsViewController.swift in Sources */,
 				C7266BCB1BED0BA6005C584F /* MeetupAPI.swift in Sources */,
+				C7266BD11BF123B7005C584F /* AuthWebViewController.swift in Sources */,
 				C7266B991BED076A005C584F /* AppDelegate.swift in Sources */,
 				C7266BCD1BED0E6C005C584F /* Utils.swift in Sources */,
 			);

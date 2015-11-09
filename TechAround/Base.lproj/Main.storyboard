@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Meetups View Controller-->
         <scene sceneID="Vyu-cV-n04">
             <objects>
-                <tableViewController id="WQw-o8-0M8" sceneMemberID="viewController">
+                <tableViewController id="WQw-o8-0M8" customClass="MeetupsViewController" customModule="TechAround" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" id="VIb-1b-dzN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,10 +57,52 @@
                         </view>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="VbV-ao-qo9" kind="presentation" identifier="authSegue" animates="NO" id="Tco-uo-o61"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukb-us-7bw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="647" y="819"/>
+        </scene>
+        <!--Auth Web View Controller-->
+        <scene sceneID="V1k-pY-YSI">
+            <objects>
+                <viewController id="VbV-ao-qo9" customClass="AuthWebViewController" customModule="TechAround" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HYc-j7-p4R"/>
+                        <viewControllerLayoutGuide type="bottom" id="dMb-CB-nle"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mnv-Tz-K6K">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ExT-B4-2th">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="VbV-ao-qo9" id="8Wn-S3-hmZ"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ExT-B4-2th" secondAttribute="trailing" id="QpX-ek-Plz"/>
+                            <constraint firstItem="ExT-B4-2th" firstAttribute="leading" secondItem="Mnv-Tz-K6K" secondAttribute="leading" id="SCV-9X-kPE"/>
+                            <constraint firstItem="ExT-B4-2th" firstAttribute="bottom" secondItem="dMb-CB-nle" secondAttribute="top" id="mqY-tT-aZp"/>
+                            <constraint firstItem="ExT-B4-2th" firstAttribute="top" secondItem="HYc-j7-p4R" secondAttribute="bottom" id="x6O-Cx-XCY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y15-L1-hpO"/>
+                    <connections>
+                        <outlet property="webView" destination="ExT-B4-2th" id="AYq-8M-Udy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIy-FB-717" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="1545"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tXl-zP-uAV">
@@ -78,7 +120,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oD1-V6-ncG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-173" y="819"/>
+            <point key="canvasLocation" x="-145" y="802"/>
         </scene>
     </scenes>
 </document>

@@ -93,12 +93,12 @@ class Group: Mappable  {
     required init?(_ map: Map){}
 }
 
-class category: Mappable {
+class Category: Mappable {
     
-    var id:             String?
+    var id:             Int?
     var name:           String?
-    var sortName:           String?
-    var shortName:           String?
+    var sortName:       String?
+    var shortName:      String?
 
     func mapping(map: Map) {
         id          <- map["id"]
