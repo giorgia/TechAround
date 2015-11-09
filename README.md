@@ -1,5 +1,5 @@
 # Tech Around 
-Tech meetup near user location
+Tech meetups near user location
 
 ## Requirements
 
