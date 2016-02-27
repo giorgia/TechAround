@@ -1,4 +1,4 @@
-# Tech Around 
+# Tech Around [![codebeat badge](https://codebeat.co/badges/25bce202-3a29-4650-8e6e-7c7b669c5707)](https://codebeat.co/projects/github-com-gmarenda-techaround)
 Tech meetups near user location
 
 ## Requirements
